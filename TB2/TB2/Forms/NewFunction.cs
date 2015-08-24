@@ -37,7 +37,7 @@ namespace TB2.Forms
             Editbox.Styles[Style.Sql.Word2].ForeColor = Color.Blue;
             Editbox.SetKeywords(0, Words.Reserved1);
             Editbox.SetKeywords(1, Words.Reserved2);
-            this.Editbox.Text = "CREATE PROCEDURE 'new_procedure' ()" +"\n"+
+            this.Editbox.Text = "CREATE FUNCTION 'new_function' ()" +"\n"+
                                      "BEGIN" +"\n "+
                                      "END";
         }
@@ -74,9 +74,10 @@ namespace TB2.Forms
             if (tabControl1.SelectedIndex == 1)
             {
                 this.BTOK.Enabled = true;
+                sql = "CREATE FUNCTION " + this.TBName.Text + " (";
                 if (dataGridView1.Rows.Count > 1)
                 {
-                    sql = "CREATE FUNCTION " + this.TBName.Text + " (";
+                    
                     for (int i = 0; i < this.dataGridView1.Rows.Count - 1; i++)
                     {
                         if (i != 0) sql += ",";

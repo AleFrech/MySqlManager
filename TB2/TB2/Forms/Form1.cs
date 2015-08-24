@@ -57,6 +57,12 @@ namespace TB2
                     {
                         treeView1.Nodes[0].Nodes[i].Nodes.Clear();
                     }
+                    if (treeView1.Nodes.Count>1)
+                    {
+                        
+                            treeView1.Nodes[1].Remove();
+                      
+                    }
                     LoadTree();
                 }
             }
@@ -217,7 +223,7 @@ namespace TB2
             if (Usermanager.Connection.CurrentUser.Database != null)
             {
                 var form = new NewProcedure(tool, Usermanager);
-                form.ShowDialog();
+                form.Show();
             }
             else
                  MessageBox.Show("You must Login to a Database", "Error!", MessageBoxButtons.OK,
@@ -268,7 +274,7 @@ namespace TB2
             if (Usermanager.Connection.CurrentUser.Database != null)
             {
                 var form = new NewFunction(tool, Usermanager);
-                form.ShowDialog();
+                form.Show();
             }
             else
                 MessageBox.Show("You must Login to a Database", "Error!", MessageBoxButtons.OK,
@@ -280,7 +286,7 @@ namespace TB2
             if (Usermanager.Connection.CurrentUser.Database != null)
             {
                 var form = new NewDatabase(tool, Usermanager);
-                form.ShowDialog();
+                form.Show();
             }
             else
                 MessageBox.Show("You must Login to a Database", "Error!", MessageBoxButtons.OK,
@@ -292,7 +298,7 @@ namespace TB2
             if (Usermanager.Connection.CurrentUser.Database != null)
             {
                 var form = new NewIndex(tool, Usermanager);
-                form.ShowDialog();
+                form.Show();
             }
             else
                 MessageBox.Show("You must Login to a Database", "Error!", MessageBoxButtons.OK,
@@ -304,7 +310,7 @@ namespace TB2
             if (Usermanager.Connection.CurrentUser.Database != null)
             {
                 var form = new NewView(tool, Usermanager);
-                form.ShowDialog();
+                form.Show();
             }
             else
                 MessageBox.Show("You must Login to a Database", "Error!", MessageBoxButtons.OK,
@@ -316,7 +322,7 @@ namespace TB2
             if (Usermanager.Connection.CurrentUser.Database != null)
             {
                 var form = new CreateUser(Usermanager,tool);
-                form.ShowDialog();
+                form.Show();
             }
             else
                 MessageBox.Show("You must Login to a Database", "Error!", MessageBoxButtons.OK,
@@ -328,7 +334,7 @@ namespace TB2
             if (Usermanager.Connection.CurrentUser.Database != null)
             {
                 var form = new NewTrigger(tool,Usermanager);
-                form.ShowDialog();
+                form.Show();
             }
             else
                 MessageBox.Show("You must Login to a Database", "Error!", MessageBoxButtons.OK,
@@ -340,7 +346,7 @@ namespace TB2
             if (Usermanager.Connection.CurrentUser.Database != null)
             {
                 var form = new NewTable(tool, Usermanager);
-                form.ShowDialog();
+                form.Show();
             }
             else
                 MessageBox.Show("You must Login to a Database", "Error!", MessageBoxButtons.OK,

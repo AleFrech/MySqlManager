@@ -54,9 +54,10 @@ namespace TB2.Forms
             if (tabControl1.SelectedIndex == 1)
             {
                 this.BTOK.Enabled = true;
+                sql = "CREATE PROCEDURE " + this.TBName.Text + " (";
                 if (dataGridView1.Rows.Count > 1)
                 {
-                    sql = "CREATE PROCEDURE " + this.TBName.Text + " (";
+                    
                     for (int i = 0; i < this.dataGridView1.Rows.Count-1; i++)
                     {
                         if (i != 0) sql += ",";

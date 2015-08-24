@@ -38,6 +38,8 @@ namespace TB2.Forms
             Editbox.Styles[Style.Sql.Word2].ForeColor = Color.Blue;
             Editbox.SetKeywords(0, Words.Reserved1);
             Editbox.SetKeywords(1, Words.Reserved2);
+            Editbox.Text = text;
+            current = text;
             button1.Show();
             button2.Show();
            
@@ -50,28 +52,31 @@ namespace TB2.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (!current.Equals(Editbox.Text))
+            if (current != null)
             {
-                if (Object.Equals("Index") && tableindex != null)
+                if (!current.Equals(Editbox.Text))
                 {
-                    tool.MySqlQuery(user, "Drop " + Object + " " + Objectname + " ON " + tableindex + "");
-                }
-                else
-                {
-                    if (tool.CheckquerySyntax(user, Editbox.Text))
+                    if (Object.Equals("Index") && tableindex != null)
                     {
-                        tool.MySqlQuery(user, "Drop " + Object + " " + Objectname);
+                        tool.MySqlQuery(user, "Drop " + Object + " " + Objectname + " ON " + tableindex + "");
+                    }
+                    else
+                    {
+                        if (tool.CheckquerySyntax(user, Editbox.Text))
+                        {
+                            tool.MySqlQuery(user, "Drop " + Object + " " + Objectname);
+                        }
+                    }
+
+                    tool.MySqlQuery(user, Editbox.Text);
+                    if (tool.SuccessQuery)
+                    {
+                        MessageBox.Show(Object + " Sucessfully Changed", "Success", MessageBoxButtons.OK,
+                            MessageBoxIcon.Information);
+                        this.Close();
+
                     }
                 }
-               
-                tool.MySqlQuery(user, Editbox.Text);
-                if (tool.SuccessQuery)
-                {
-                    MessageBox.Show(Object + " Sucessfully Changed", "Success", MessageBoxButtons.OK,
-                        MessageBoxIcon.Information);
-                    this.Close();
-                    
-               }
             }
             this.Close();
 

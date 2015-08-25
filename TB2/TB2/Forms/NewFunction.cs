@@ -84,7 +84,7 @@ namespace TB2.Forms
                         sql += " " + dataGridView1.Rows[i].Cells["Name"].Value.ToString();
                         sql += " " + dataGridView1.Rows[i].Cells["DataType"].Value.ToString();
                     }
-                    sql += ") " + "\n" + "RETURNS " + "\n" + " BEGIN " + "\n" + "END";
+                    sql += ") " + "\n" + "RETURNS " + "\n" + "BEGIN " + "\n" + "END";
                     Editbox.Text = sql;
                 }
 

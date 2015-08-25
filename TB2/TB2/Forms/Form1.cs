@@ -232,39 +232,42 @@ namespace TB2
         }
         private void treeView1_MouseDoubleClick(object sender, MouseEventArgs e)
         {
-            if (treeView1.SelectedNode.Parent != null && Usermanager.Connection.CurrentUser.Database!=null)
+            if (treeView1.SelectedNode != null)
             {
-                if (treeView1.SelectedNode != null && treeView1.SelectedNode.Parent.Text.Equals("Procedures"))
+                if (treeView1.SelectedNode.Parent != null && Usermanager.Connection.CurrentUser.Database != null)
                 {
-                    Usermanager.ShowProccedureDDL(treeView1);
-                    treeView1.SelectedNode = null;
-                }
-                if (treeView1.SelectedNode != null && treeView1.SelectedNode.Parent.Text.Equals("Functions"))
-                {
-                    Usermanager.ShowFunctionDDL(treeView1);
-                    treeView1.SelectedNode = null;
-                }
+                    if (treeView1.SelectedNode != null && treeView1.SelectedNode.Parent.Text.Equals("Procedures"))
+                    {
+                        Usermanager.ShowProccedureDDL(treeView1);
+                        treeView1.SelectedNode = null;
+                    }
+                    if (treeView1.SelectedNode != null && treeView1.SelectedNode.Parent.Text.Equals("Functions"))
+                    {
+                        Usermanager.ShowFunctionDDL(treeView1);
+                        treeView1.SelectedNode = null;
+                    }
 
-                if (treeView1.SelectedNode != null &&  treeView1.SelectedNode.Parent.Text.Equals("Views"))
-                {
-                    Usermanager.ShowViewDDL(treeView1);
-                    treeView1.SelectedNode = null;
-                }
-                if (treeView1.SelectedNode != null &&  treeView1.SelectedNode.Parent.Text.Equals("Triggers"))
-                {
-                    Usermanager.ShowTriggerDDL(treeView1);
-                    treeView1.SelectedNode = null;
-                }
-                if ( treeView1.SelectedNode!=null && treeView1.SelectedNode.Parent.Text.Equals("Tables"))
-                {
-                    Usermanager.ShowTable_ColumnDDL(treeView1);
+                    if (treeView1.SelectedNode != null && treeView1.SelectedNode.Parent.Text.Equals("Views"))
+                    {
+                        Usermanager.ShowViewDDL(treeView1);
+                        treeView1.SelectedNode = null;
+                    }
+                    if (treeView1.SelectedNode != null && treeView1.SelectedNode.Parent.Text.Equals("Triggers"))
+                    {
+                        Usermanager.ShowTriggerDDL(treeView1);
+                        treeView1.SelectedNode = null;
+                    }
+                    if (treeView1.SelectedNode != null && treeView1.SelectedNode.Parent.Text.Equals("Tables"))
+                    {
+                        Usermanager.ShowTable_ColumnDDL(treeView1);
 
-                    treeView1.SelectedNode = null;
-                }
-                if (treeView1.SelectedNode != null && treeView1.SelectedNode.Parent.Text.Equals("Indexes"))
-                {
-                    Usermanager.ShowIndexDDL(treeView1);
-                    treeView1.SelectedNode = null;
+                        treeView1.SelectedNode = null;
+                    }
+                    if (treeView1.SelectedNode != null && treeView1.SelectedNode.Parent.Text.Equals("Indexes"))
+                    {
+                        Usermanager.ShowIndexDDL(treeView1);
+                        treeView1.SelectedNode = null;
+                    }
                 }
             }
         }

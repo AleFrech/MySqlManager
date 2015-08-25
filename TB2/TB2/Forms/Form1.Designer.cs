@@ -73,7 +73,7 @@ namespace TB2
             this.editToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1092, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1092, 24);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -82,7 +82,7 @@ namespace TB2
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.newToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(44, 24);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // newToolStripMenuItem
@@ -97,69 +97,69 @@ namespace TB2
             this.functionToolStripMenuItem,
             this.vIewToolStripMenuItem});
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(114, 26);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
             this.newToolStripMenuItem.Text = "New";
             // 
             // userToolStripMenuItem
             // 
             this.userToolStripMenuItem.Name = "userToolStripMenuItem";
-            this.userToolStripMenuItem.Size = new System.Drawing.Size(151, 26);
+            this.userToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.userToolStripMenuItem.Text = "User";
             this.userToolStripMenuItem.Click += new System.EventHandler(this.userToolStripMenuItem_Click);
             // 
             // schemaToolStripMenuItem
             // 
             this.schemaToolStripMenuItem.Name = "schemaToolStripMenuItem";
-            this.schemaToolStripMenuItem.Size = new System.Drawing.Size(151, 26);
+            this.schemaToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.schemaToolStripMenuItem.Text = "Database";
             this.schemaToolStripMenuItem.Click += new System.EventHandler(this.schemaToolStripMenuItem_Click);
             // 
             // tableToolStripMenuItem
             // 
             this.tableToolStripMenuItem.Name = "tableToolStripMenuItem";
-            this.tableToolStripMenuItem.Size = new System.Drawing.Size(151, 26);
+            this.tableToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.tableToolStripMenuItem.Text = "Table";
             this.tableToolStripMenuItem.Click += new System.EventHandler(this.tableToolStripMenuItem_Click);
             // 
             // triggerToolStripMenuItem
             // 
             this.triggerToolStripMenuItem.Name = "triggerToolStripMenuItem";
-            this.triggerToolStripMenuItem.Size = new System.Drawing.Size(151, 26);
+            this.triggerToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.triggerToolStripMenuItem.Text = "Trigger";
             this.triggerToolStripMenuItem.Click += new System.EventHandler(this.triggerToolStripMenuItem_Click);
             // 
             // indexToolStripMenuItem
             // 
             this.indexToolStripMenuItem.Name = "indexToolStripMenuItem";
-            this.indexToolStripMenuItem.Size = new System.Drawing.Size(151, 26);
+            this.indexToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.indexToolStripMenuItem.Text = "Index";
             this.indexToolStripMenuItem.Click += new System.EventHandler(this.indexToolStripMenuItem_Click);
             // 
             // procedureToolStripMenuItem
             // 
             this.procedureToolStripMenuItem.Name = "procedureToolStripMenuItem";
-            this.procedureToolStripMenuItem.Size = new System.Drawing.Size(151, 26);
+            this.procedureToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.procedureToolStripMenuItem.Text = "Procedure";
             this.procedureToolStripMenuItem.Click += new System.EventHandler(this.procedureToolStripMenuItem_Click);
             // 
             // functionToolStripMenuItem
             // 
             this.functionToolStripMenuItem.Name = "functionToolStripMenuItem";
-            this.functionToolStripMenuItem.Size = new System.Drawing.Size(151, 26);
+            this.functionToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.functionToolStripMenuItem.Text = "Function";
             this.functionToolStripMenuItem.Click += new System.EventHandler(this.functionToolStripMenuItem_Click);
             // 
             // vIewToolStripMenuItem
             // 
             this.vIewToolStripMenuItem.Name = "vIewToolStripMenuItem";
-            this.vIewToolStripMenuItem.Size = new System.Drawing.Size(151, 26);
+            this.vIewToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.vIewToolStripMenuItem.Text = "View";
             this.vIewToolStripMenuItem.Click += new System.EventHandler(this.vIewToolStripMenuItem_Click);
             // 
             // editToolStripMenuItem
             // 
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(47, 24);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
             this.editToolStripMenuItem.Text = "Edit";
             // 
             // BTRefresh
@@ -178,7 +178,7 @@ namespace TB2
             this.BTTest.AutoSize = true;
             this.BTTest.BackgroundImage = global::TB2.Properties.Resources.play;
             this.BTTest.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BTTest.Location = new System.Drawing.Point(256, 55);
+            this.BTTest.Location = new System.Drawing.Point(256, 54);
             this.BTTest.Name = "BTTest";
             this.BTTest.Size = new System.Drawing.Size(28, 26);
             this.BTTest.TabIndex = 5;
